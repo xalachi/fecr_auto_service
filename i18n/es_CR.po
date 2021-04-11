@@ -1,0 +1,217 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* fecr_auto_service
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0-20200417\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-06-26 18:44+0000\n"
+"PO-Revision-Date: 2020-06-26 18:44+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fecr_auto_service
+#: model:ir.actions.act_window,name:fecr_auto_service.fecr_company_action
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_company_menu
+msgid "Company"
+msgstr "Empresa"
+
+#. module: fecr_auto_service
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_configuration_menu
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: fecr_auto_service
+#: model:ir.model.fields,field_description:fecr_auto_service.field_account_invoice_mail__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: fecr_auto_service
+#: model:ir.model.fields,field_description:fecr_auto_service.field_account_invoice_mail__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: fecr_auto_service
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_customer_menu
+msgid "Customers"
+msgstr "Clientes"
+
+#. module: fecr_auto_service
+#: model:ir.model.fields,field_description:fecr_auto_service.field_account_invoice_mail__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: fecr_auto_service
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_purchase_documents_menu
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_sales_documents_menu
+msgid "Documents"
+msgstr "Documentos"
+
+#. module: fecr_auto_service
+#: model:ir.model.fields,field_description:fecr_auto_service.field_account_invoice_mail__name
+msgid "Email"
+msgstr "Correo electrónico"
+
+#. module: fecr_auto_service
+#: model:ir.model.fields,field_description:fecr_auto_service.field_account_invoice__email_cc_ids
+msgid "Email Cc"
+msgstr "Correos CC"
+
+#. module: fecr_auto_service
+#: model:ir.model.fields,field_description:fecr_auto_service.field_account_invoice__email_cc_string
+msgid "Email Cc String"
+msgstr "Correos CC (Cadena)"
+
+#. module: fecr_auto_service
+#: model:ir.model,name:fecr_auto_service.model_account_invoice_mail
+msgid "Email to use in CC Invoices"
+msgstr "Correo a usar como CC en las Facturas"
+
+#. module: fecr_auto_service
+#: model:res.groups,name:fecr_auto_service.fecr_admin_group
+msgid "FECR / Admin"
+msgstr "FECR / Administrador"
+
+#. module: fecr_auto_service
+#: model:res.groups,name:fecr_auto_service.fecr_user_group
+msgid "FECR / User"
+msgstr "FECR / Usuario"
+
+#. module: fecr_auto_service
+#: model:ir.model.fields,field_description:fecr_auto_service.field_account_invoice_mail__id
+msgid "ID"
+msgstr ""
+
+#. module: fecr_auto_service
+#: model:ir.model,name:fecr_auto_service.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: fecr_auto_service
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_invoicing_menu
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_menu
+msgid "Invoicing"
+msgstr "Facturación"
+
+#. module: fecr_auto_service
+#: model:ir.model.fields,field_description:fecr_auto_service.field_account_invoice_mail____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: fecr_auto_service
+#: model:ir.model.fields,field_description:fecr_auto_service.field_account_invoice_mail__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: fecr_auto_service
+#: model:ir.model.fields,field_description:fecr_auto_service.field_account_invoice_mail__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: fecr_auto_service
+#: model:ir.actions.act_window,name:fecr_auto_service.fecr_mail_action
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_mail_menu
+msgid "Mail"
+msgstr "Correo Electrónico"
+
+#. module: fecr_auto_service
+#: model:ir.model,name:fecr_auto_service.model_ir_mail_server
+msgid "Mail Server"
+msgstr "Servidor de correo"
+
+#. module: fecr_auto_service
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_manual_menu
+msgid "Manual"
+msgstr "Manual"
+
+#. module: fecr_auto_service
+#: model:ir.model,name:fecr_auto_service.model_ir_model_data
+msgid "Model Data"
+msgstr "Datos del modelo"
+
+#. module: fecr_auto_service
+#: model:ir.model.fields,help:fecr_auto_service.field_ir_mail_server__smtp_pass
+msgid "Optional password for SMTP authentication"
+msgstr "Contraseña opcional para la autenticación del SMTP"
+
+#. module: fecr_auto_service
+#: model:ir.model.fields,help:fecr_auto_service.field_ir_mail_server__smtp_user
+msgid "Optional username for SMTP authentication"
+msgstr "Usuario opcional para la autenticación del SMTP"
+
+#. module: fecr_auto_service
+#: model:ir.model.fields,field_description:fecr_auto_service.field_ir_mail_server__smtp_pass
+msgid "Password"
+msgstr "Contraseña"
+
+#. module: fecr_auto_service
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_purchase_payments_menu
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_sales_payments_menu
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: fecr_auto_service
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_product_menu
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_purchase_report_menu
+msgid "Products"
+msgstr "Productos"
+
+#. module: fecr_auto_service
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_purchase_menu
+msgid "Purchases"
+msgstr "Compras"
+
+#. module: fecr_auto_service
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_report_menu
+msgid "Reports"
+msgstr "Informes"
+
+#. module: fecr_auto_service
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_sale_report_menu
+msgid "Sale Invoices"
+msgstr "Facturas de Venta"
+
+#. module: fecr_auto_service
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_sale_menu
+msgid "Sales"
+msgstr "Ventas"
+
+#. module: fecr_auto_service
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_supplier_menu
+msgid "Suppliers"
+msgstr "Proveedores"
+
+#. module: fecr_auto_service
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_support_menu
+msgid "Support"
+msgstr "Soporte"
+
+#. module: fecr_auto_service
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_tax_report_menu
+msgid "Taxes"
+msgstr "Impuestos"
+
+#. module: fecr_auto_service
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_ticket_menu
+msgid "Ticket"
+msgstr "Ticket"
+
+#. module: fecr_auto_service
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_tutorial_menu
+msgid "Tutorials"
+msgstr "Tutoriales"
+
+#. module: fecr_auto_service
+#: model:ir.model.fields,field_description:fecr_auto_service.field_ir_mail_server__smtp_user
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#. module: fecr_auto_service
+#: model:ir.ui.menu,name:fecr_auto_service.fecr_user_menu
+msgid "Users"
+msgstr "Usuarios"

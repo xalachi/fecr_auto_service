@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+fecr_user_company_res_company,fecr_user_company_res_company,base.model_res_company,fecr_user_group,1,1,0,0
+fecr_user_ir_mail_server,fecr_user_ir_mail_server,base.model_ir_mail_server,fecr_user_group,1,1,0,0
+fecr_user_res_users,fecr_user_res_users,base.model_res_users,fecr_user_group,1,1,0,0
+fecr_user_product_template,fecr_user_product_template,product.model_product_template,fecr_user_group,1,1,1,1
+fecr_user_product_product,fecr_user_product_product,product.model_product_product,fecr_user_group,1,1,1,1
+access_account_invoice_mail,access_account_invoice_mail,model_account_invoice_mail,base.group_user,1,1,1,1

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="account_invoice_view_tree" model="ir.ui.view">
+        <field name="name">account.invoice.view.tree.inherit.remove_third_party_id</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_tree"/>
+        <field name="arch" type="xml">
+            <field name="origin" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+        </field>
+    </record>
+
+    <record id="account_invoice_view_form" model="ir.ui.view">
+        <field name="name">account.invoice.view.form.inherit.remove_third_party_id</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="fecr.account_invoice_form_view_inherit_fecr"/>
+        <field name="arch" type="xml">
+            <button name="action_check_hacienda" position="attributes">
+                <attribute name="groups">fecr_auto_service.fecr_admin_group</attribute>
+            </button>
+            <button name="generate_and_send_invoices" position="attributes">
+                <attribute name="groups">fecr_auto_service.fecr_admin_group</attribute>
+            </button>
+            <field name="third_party_id" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+            <field name="user_id" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+            <field name="team_id" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+            <field name="team_id" position="after">
+                <field name="email_cc_ids" widget="many2many_tags"/>
+            </field>
+        </field>
+    </record>
+</odoo>

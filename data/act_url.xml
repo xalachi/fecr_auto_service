@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="fecr_manual_url" model="ir.actions.act_url">
+        <field name="name"></field>
+        <field name="type">ir.actions.act_url</field>
+        <field name="target">new</field>
+        <!-- TODO -->
+        <field name="url">https://www.xalachi.com/xalachi-manuales</field>
+    </record>
+    <record id="fecr_ticket_url" model="ir.actions.act_url">
+        <field name="name"></field>
+        <field name="type">ir.actions.act_url</field>
+        <field name="target">new</field>
+        <!-- TODO -->
+        <field name="url">https://ayuda.xalachi.com/portal/newticket</field>
+    </record>
+    <record id="fecr_tutorial_url" model="ir.actions.act_url">
+        <field name="name"></field>
+        <field name="type">ir.actions.act_url</field>
+        <field name="target">new</field>
+        <!-- TODO -->
+        <field name="url">https://ayuda.xalachi.com/portal/kb</field>
+    </record>
+</odoo>

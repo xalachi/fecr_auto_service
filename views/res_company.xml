@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="res_company_view_form" model="ir.ui.view">
+        <field name="name">res.company.view.form.inherit.invoices_available</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="fecr.company_form_view_inherit"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='electronic_invoice']/group" position="inside">
+                <group name="invoice_limits" string="Invoice Limits">
+                    <field name="invoices_available" readonly="1"/>
+                    <field name="expiration_date" readonly="1"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="res_company_view_form_security" model="ir.ui.view">
+        <field name="name">res.company.view.form.inherit.invoices_available</field>
+        <field name="model">res.company</field>
+        <field name="inherit_id" ref="res_company_view_form"/>
+        <field name="groups_id" eval="[(4,ref('fecr_auto_service.fecr_admin_group'))]"/>
+        <field name="arch" type="xml">
+            <field name="invoices_available" position="attributes">
+                <attribute name="readonly">0</attribute>
+            </field>
+            <field name="expiration_date" position="attributes">
+                <attribute name="readonly">0</attribute>
+            </field>
+        </field>
+    </record>
+
+    <record id="fecr_company_action" model="ir.actions.act_window">
+        <field name="name">Company</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.company</field>
+        <field name="view_mode">form</field>
+        <field name="res_id">1</field>
+    </record>
+</odoo>

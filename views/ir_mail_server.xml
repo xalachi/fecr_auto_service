@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="fecr_mail_action" model="ir.actions.act_window">
+        <field name="name">Mail</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">ir.mail_server</field>
+        <field name="view_mode">form</field>
+        <field name="res_id">1</field>
+    </record>
+</odoo>

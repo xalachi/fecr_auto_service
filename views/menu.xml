@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <menuitem id="fecr_menu" name="Invoicing" sequence="-1" web_icon="fecr_auto_service,static/description/icon.png"/>
+
+    <menuitem id="fecr_invoicing_menu" parent="fecr_menu" name="Invoicing" sequence="0"/>
+
+    <menuitem id="fecr_overview_menu" parent="fecr_invoicing_menu" name="Overview" action="account.open_account_journal_dashboard_kanban" sequence="-1"/>
+
+    <menuitem id="fecr_sale_menu" parent="fecr_invoicing_menu" name="Sales" sequence="0"/>
+
+    <menuitem id="fecr_sales_documents_menu" parent="fecr_sale_menu" name="Documents" sequence="0" action="account.action_invoice_tree1"/>
+    <menuitem id="fecr_customer_menu" parent="fecr_sale_menu" name="Customers" sequence="1" action="base.action_partner_customer_form"/>
+    <menuitem id="fecr_sales_payments_menu" parent="fecr_sale_menu" name="Payments" sequence="2" action="account.action_account_payments"/>
+
+    <menuitem id="fecr_purchase_menu" parent="fecr_invoicing_menu" name="Purchases" sequence="1"/>
+
+    <menuitem id="fecr_purchase_documents_menu" parent="fecr_purchase_menu" name="Documents" sequence="0" action="account.action_vendor_bill_template"/>
+    <menuitem id="fecr_supplier_menu" parent="fecr_purchase_menu" name="Suppliers" sequence="1" action="base.action_partner_supplier_form"/>
+    <menuitem id="fecr_purchase_payments_menu" parent="fecr_purchase_menu" name="Payments" sequence="2" action="account.action_account_payments_payable"/>
+
+    <menuitem id="fecr_report_menu" parent="fecr_invoicing_menu" name="Reports" sequence="2"/>
+
+    <menuitem id="fecr_sale_report_menu" parent="fecr_report_menu" name="Sale Invoices" sequence="0" action="account.action_account_invoice_report_all"/>
+    <!-- TODO -->
+    <menuitem id="fecr_purchase_report_menu" parent="fecr_report_menu" name="Purchase Invoices" sequence="1"/>
+    <menuitem id="fecr_tax_report_menu" parent="fecr_report_menu" name="Taxes" sequence="2" action="fecr.account_invoice_tax_report_action"/>
+
+    <menuitem id="fecr_product_menu" parent="fecr_invoicing_menu" name="Products" sequence="3"/>
+
+    <menuitem id="fecr_purchase_report_menu" parent="fecr_product_menu" name="Products" sequence="0" action="stock.product_template_action_product"/>
+
+    <menuitem id="fecr_configuration_menu" parent="fecr_menu" name="Configuration" sequence="1"/>
+    <menuitem id="fecr_user_menu" parent="fecr_configuration_menu" name="Users" sequence="0" action="base.action_res_users"/>
+    <menuitem id="fecr_company_menu" parent="fecr_configuration_menu" name="Company" sequence="1" action="fecr_company_action"/>
+    <menuitem id="fecr_mail_menu" parent="fecr_configuration_menu" name="Mail" sequence="1" action="fecr_mail_action"/>
+
+    <menuitem id="fecr_support_menu" parent="fecr_menu" name="Support" sequence="2"/>
+
+    <menuitem id="fecr_manual_menu" parent="fecr_support_menu" name="Manual" sequence="0" action="fecr_manual_url"/>
+    <menuitem id="fecr_ticket_menu" parent="fecr_support_menu" name="Ticket" sequence="1" action="fecr_ticket_url"/>
+    <menuitem id="fecr_tutorial_menu" parent="fecr_support_menu" name="Tutorials" sequence="2" action="fecr_tutorial_url"/>
+
+    <record id="account.menu_finance" model="ir.ui.menu">
+        <field name="groups_id" eval="[(3, ref('account.group_account_invoice')), (4, ref('fecr_admin_group'))]"/>
+    </record>
+
+    <record id="mail.menu_root_discuss" model="ir.ui.menu">
+        <field name="groups_id" eval="[(3, ref('base.group_user')),(4, ref('fecr_admin_group'))]"/>
+    </record>
+
+    <record id="stock.menu_stock_root" model="ir.ui.menu">
+        <field name="groups_id" eval="[(3, ref('stock.group_stock_manager')),(3, ref('stock.group_stock_user')),(4, ref('fecr_admin_group'))]"/>
+    </record>
+</odoo>
