@@ -2,8 +2,8 @@
 {
     'name': 'FECR Auto-Service',
     'version': '12.0.1.7.0',
-    'author': 'HomebrewSoft',
-    'website': 'https://gitlab.com/HomebrewSoft/fecr/fecr_auto_service',
+    'author': 'Big Cloud CR',
+    'website': 'https://www.xalachi.com',
     'depends': [
         'fecr',
         'stock',
